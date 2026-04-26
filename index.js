@@ -14,7 +14,7 @@ const server = http
         if (req.url === '/') {
           res.write(pug.renderFile('./top.pug'))
         } else if (req.url === '/enquetes') {
-          res.write(pug.renderFile('./enqutes.pug'))
+          res.write(pug.renderFile('./enquetes.pug'))
         } else if (req.url === '/enquetes/yaki-tofu') {
           res.write(
             pug.renderFile('./form.pug', {
