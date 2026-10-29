@@ -1,4 +1,4 @@
-FROM node:22.22.0
+FROM node:24.22.1
 
 RUN apt-get update && apt-get install -y \
   curl \
@@ -12,3 +12,5 @@ ENV LANG=ja_JP.UTF-8
 ENV TZ=Asia/Tokyo
 
 WORKDIR /app
+COPY . /app
+CMD ["sh", "run.sh"]
